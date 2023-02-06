@@ -4,14 +4,14 @@
 interface Person {
   name: string
   age: number
-  address: string
+  address?: string
 }
 
 type MyPartial<T> = {
   [P in keyof T]?: T[P]
 }
 
-type ResultType =  MyPartial<Person>
-type ResultType2 =  Partial<Person>
+type ResultType = MyPartial<Person>
+type ResultType2 = Partial<Person>
 
 export {}

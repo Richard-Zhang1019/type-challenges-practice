@@ -4,7 +4,7 @@
 interface Person {
   name: string
   age: number
-  address: string
+  address?: string
 }
 
 type res = keyof any
@@ -14,7 +14,7 @@ type MyRecord<K extends keyof any, T> = {
   [P in K]: T
 }
 
-type ResultType =  MyRecord<string, Person>
-type ResultType2 =  Record<string, Person>
+type ResultType = MyRecord<string, Person>
+type ResultType2 = Record<string, Person>
 
 export {}

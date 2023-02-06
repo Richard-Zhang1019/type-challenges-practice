@@ -4,14 +4,14 @@
 interface Person {
   name: string
   age: number
-  address: string
+  address?: string
 }
 
 type MyReadonly<T> = {
   readonly [P in keyof T]: T[P]
 }
 
-type ResultType =  MyReadonly<Person>
-type ResultType2 =  Readonly<Person>
+type ResultType = MyReadonly<Person>
+type ResultType2 = Readonly<Person>
 
 export {}
