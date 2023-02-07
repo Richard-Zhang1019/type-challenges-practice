@@ -1,5 +1,5 @@
 // Readonly<T>
-// 传入类型的属性变为必选
+// 传入类型的属性变为readonly
 
 interface Person {
   name: string
