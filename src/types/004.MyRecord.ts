@@ -7,8 +7,6 @@ interface Person {
   address?: string
 }
 
-type res = keyof any
-
 // 确保 K 是可以作为key的联合类型
 type MyRecord<K extends keyof any, T> = {
   [P in K]: T
